@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "npm": "^5.8.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
