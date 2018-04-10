@@ -20,3 +20,32 @@ body {
     text-transform: uppercase;
     color: #790600 !important;
     font-weight: 500; }
+
+#carouselContainer #outer-border {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  z-index: 1;
+  height: 180px;
+  width: 200px;
+  border: 3px solid #ffffff;
+  border-radius: 80px; }
+  #carouselContainer #outer-border #inner-circle {
+    height: 169px;
+    width: 189px;
+    background-color: rgba(255, 255, 255, 0.83);
+    border-radius: 80px;
+    margin: 2px auto;
+    padding: 20px auto; }
+    #carouselContainer #outer-border #inner-circle p {
+      position: absolute;
+      top: 75px;
+      left: 55px;
+      color: #790600;
+      text-transform: uppercase; }
+
+#carouselContainer .carousel-inner {
+  height: 600px; }
+  #carouselContainer .carousel-inner .carousel-item img {
+    height: 100%;
+    width: 100%; }
