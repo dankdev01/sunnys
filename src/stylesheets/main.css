@@ -39,13 +39,18 @@ body {
     padding: 20px auto; }
     #carouselContainer #outer-border #inner-circle p {
       position: absolute;
-      top: 75px;
-      left: 55px;
+      top: 45%;
+      left: 20%;
       color: #790600;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 3px; }
 
 #carouselContainer .carousel-inner {
   height: 600px; }
   #carouselContainer .carousel-inner .carousel-item img {
     height: 100%;
     width: 100%; }
+
+#menu-links-container ul .nav-item {
+  margin-right: 3%; }
