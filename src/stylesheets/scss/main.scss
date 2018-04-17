@@ -1,3 +1,10 @@
+$font-color: #790600;
+$font-cater: #faa419;
+$white: #ffffff;
+$background: url("../images/menu-background.png");
+$footer: url("../images/bottom-background.png");
+$footer-font-color: #dd671f;
+
 body {
   border: 0;
   padding: 0;
@@ -7,11 +14,11 @@ body {
 #banner {
   width: 100%;
   height: 25px;
-  background-color: #790600;
+  background-color: $font-color;
 }
 
 .navbar {
-  background-color: #ffffff !important;
+  background-color: $white !important;
   .navbar-brand {
     height: 70px;
     width: 90px;
@@ -22,8 +29,10 @@ body {
   }
   .nav-link {
     text-transform: uppercase;
-    color: #790600 !important;
+    color: $font-color !important;
     font-weight: 500;
+    letter-spacing: 1px;
+    margin-right: 20px;
   }
 }
 
@@ -35,7 +44,7 @@ body {
     z-index: 1;
     height: 180px;
     width: 200px;
-    border: 3px solid #ffffff;
+    border: 4px solid $white;
     border-radius: 80px;
     #inner-circle {
       height: 169px;
@@ -48,7 +57,7 @@ body {
         position: absolute;
         top: 45%;
         left: 20%;
-        color: #790600;
+        color: $font-color;
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 3px;
@@ -67,9 +76,63 @@ body {
 }
 
 #menu-links-container {
+  height: 60px;
   ul {
+    margin-top: 20px;
     .nav-item {
       margin-right: 3%;
+      a {
+        color: $font-color;
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+.menu {
+  height: 700px; //mq
+  background-image: $background;
+  background-size: cover;
+  #menu-items-list {
+    width: 60%;
+    border-bottom: 1px solid grey;
+  }
+}
+
+#cater {
+  height: 450px; // mq
+  background-color: $white;
+  padding-top: 7%;
+  #info {
+    h3 {
+      text-align: center;
+    }
+    hr {
+      height: 3px;
+      width: 80px;
+      background-color: $font-cater;
+    }
+    p {
+      margin-top: 40px; //mq
+    }
+  }
+}
+
+footer {
+  background-image: $footer;
+  background-size: cover;
+  height: 450px;
+  .container-fluid {
+    left: 10%;
+  }
+  #map {
+    height: 300px;
+    width: 400px;
+    border: 1px solid $footer-font-color;
+    img {
+      height: 100%;
+      width: 100%;
     }
   }
 }
