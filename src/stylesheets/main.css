@@ -76,7 +76,7 @@ body {
 #cater {
   height: 450px;
   background-color: #ffffff;
-  padding-top: 7%; }
+  padding-top: 6%; }
   #cater #info h3 {
     text-align: center; }
   #cater #info hr {
@@ -89,13 +89,18 @@ body {
 footer {
   background-image: url("../images/bottom-background.png");
   background-size: cover;
-  height: 450px; }
-  footer .container-fluid {
-    left: 10%; }
-  footer #map {
-    height: 300px;
-    width: 400px;
-    border: 1px solid #dd671f; }
-    footer #map img {
-      height: 100%;
-      width: 100%; }
+  height: 400px;
+  padding-top: 6%; }
+  footer .container .row {
+    text-align: center;
+    color: #dd671f; }
+    footer .container .row #contact p, footer .container .row #hours p, footer .container .row #contact .fas, footer .container .row #hours .fas {
+      color: #707070; }
+    footer .container .row #contact .btm-bdr, footer .container .row #hours .btm-bdr {
+      margin-bottom: 0; }
+    footer .container .row #map {
+      border: 1px solid #dd671f;
+      padding: 0; }
+      footer .container .row #map img {
+        height: 100%;
+        width: 100%; }
